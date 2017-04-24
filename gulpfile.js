@@ -33,7 +33,7 @@ gulp.task("server", function () {
 });
 /* styles and other assets */
 gulp.task("assets", function(){
-    return gulp.src(["styles.css"], { cwd: "src/**" })
+    return gulp.src(["styles.css", "favicon.ico"], { cwd: "src/**" })
         .pipe(gulp.dest("build"));
 });
 /**
